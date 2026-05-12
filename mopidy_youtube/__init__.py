@@ -1,10 +1,10 @@
 import logging
 import pathlib
+from importlib.metadata import version
 
-import pkg_resources
 from mopidy import config, ext
 
-__version__ = pkg_resources.get_distribution("Mopidy-YouTube").version
+__version__ = version("Mopidy-YouTube")
 
 logger = logging.getLogger(__name__)
 
